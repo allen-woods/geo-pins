@@ -1,12 +1,12 @@
-import React from "react";
-import { withStyles } from "@material-ui/core/styles";
-// import Typography from "@material-ui/core/Typography";
-// import AccessTime from "@material-ui/icons/AccessTime";
-// import Face from "@material-ui/icons/Face";
+import React from "react"
+import { withStyles } from "@material-ui/core/styles"
+// import Typography from "@material-ui/core/Typography"
+// import AccessTime from "@material-ui/icons/AccessTime"
+// import Face from "@material-ui/icons/Face"
 
 const PinContent = ({ classes }) => {
-  return <div>PinContent</div>;
-};
+  return <div>PinContent</div>
+}
 
 const styles = theme => ({
   root: {
@@ -23,6 +23,6 @@ const styles = theme => ({
     alignItems: "center",
     justifyContent: "center"
   }
-});
+})
 
-export default withStyles(styles)(PinContent);
+export default withStyles(styles)(PinContent)

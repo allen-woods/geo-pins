@@ -1,9 +1,9 @@
-import React from "react";
-import { withStyles } from "@material-ui/core/styles";
-// import Explore from "@material-ui/icons/Explore";
-// import Typography from "@material-ui/core/Typography";
+import React from "react"
+import { withStyles } from "@material-ui/core/styles"
+// import Explore from "@material-ui/icons/Explore"
+// import Typography from "@material-ui/core/Typography"
 
-const NoContent = ({ classes }) => <div>NoContent</div>;
+const NoContent = ({ classes }) => <div>NoContent</div>
 
 const styles = theme => ({
   root: {
@@ -16,6 +16,6 @@ const styles = theme => ({
     margin: theme.spacing.unit,
     fontSize: "80px"
   }
-});
+})
 
-export default withStyles(styles)(NoContent);
+export default withStyles(styles)(NoContent)

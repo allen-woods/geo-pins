@@ -1,10 +1,10 @@
-import React from "react";
-import { withStyles } from "@material-ui/core/styles";
-// import { Paper } from "@material-ui/core";
+import React from "react"
+import { withStyles } from "@material-ui/core/styles"
+// import { Paper } from "@material-ui/core"
 
 const Blog = ({ classes }) => {
-  return <div>Blog</div>;
-};
+  return <div>Blog</div>
+}
 
 const styles = {
   root: {
@@ -21,6 +21,6 @@ const styles = {
     overflowX: "hidden",
     overflowY: "scroll"
   }
-};
+}
 
-export default withStyles(styles)(Blog);
+export default withStyles(styles)(Blog)
