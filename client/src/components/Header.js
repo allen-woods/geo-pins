@@ -37,7 +37,6 @@ const Header = ({ classes }) => {
                 alt={currentUser.name}
               />
               <Typography
-                component='h1'
                 variant='h5'
                 color='inherit'
                 noWrap
