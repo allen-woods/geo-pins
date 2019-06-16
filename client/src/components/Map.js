@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react'
 import ReactMapGL, { NavigationControl, Marker, Popup } from 'react-map-gl'
 import { withStyles } from '@material-ui/core/styles'
-import differenceInMinutes from 'date-fns//difference_in_minutes'
+import differenceInMinutes from 'date-fns/difference_in_minutes'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 import DeleteIcon from '@material-ui/icons/DeleteTwoTone'
@@ -69,7 +69,6 @@ const Map = ({ classes }) => {
   }
 
   const handleMapClick = ({ target, lngLat, leftButton }) => {
-    console.log({ target })
     if (!leftButton || target.childNodes.length < 1) return
     if (!state.draft) {
       dispatch({ type: 'CREATE_DRAFT' })
@@ -116,7 +115,7 @@ const Map = ({ classes }) => {
         width='100vw'
         height='calc(100vh - 64px)'
         mapStyle='mapbox://styles/mapbox/streets-v9'
-        mapboxApiAccessToken='pk.eyJ1IjoiYWxsZW53b29kcyIsImEiOiJjandvOGhqbzcwYnB6NDRueTJqMGFtd20yIn0.IsfCl5hr5_sZjzBOLs5b5A'
+        mapboxApiAccessToken={process.env.MAPBOX_TOKEN}
         scrollZoom={!mobileSize}
         onViewportChange={newViewport => setViewport(newViewport)}
         onClick={handleMapClick}
